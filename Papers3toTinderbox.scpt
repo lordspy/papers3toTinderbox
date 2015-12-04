@@ -370,7 +370,7 @@ on write_authors(keyValuePair, target_file)
 end write_authors
 
 
-display dialog "Iniciando processamento"
+display dialog "Initiating Process"& character id 13 & "Created by: Rodrigo de Godoy Domingues" & character id 13 & "e-mail: rodrigod@hiperlogic.com.br" & character id 13 & "Uberlândia - MG - BR, December, 4th - 2015"
 tell application "Papers"
 	set pubList to every publication item
 	set perList to every person item
@@ -403,4 +403,4 @@ tell application "Papers"
 	
 	my write_authors(keyValuePair, this_file)
 end tell
-display dialog "Processamento finalizado"
+display dialog "Process Concluded"& character id 13 & "Created by: Rodrigo de Godoy Domingues" & character id 13 & "e-mail: rodrigod@hiperlogic.com.br" & character id 13 & "Uberlândia - MG - BR, December, 4th - 2015"
